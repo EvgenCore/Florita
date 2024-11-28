@@ -1,7 +1,408 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Gerislan;
+  src: url("../assets/fonts/Gerislan.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+html {
+  scroll-padding-top: 120px;
+}
+
+body {
+  margin: 0;
+  background-color: #f7b7b1;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 100px;
+}
+
+header {
+  width: 100%;
+  /* max-width: 1920px; */
+  margin: 0 auto;
+  box-shadow: 0 5px 5px -4px rgba(0, 0, 0, 0.413);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  position: fixed;
+  overflow: hidden;
+}
+header .header_container {
+  height: 120px;
+  max-height: 120px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: radial-gradient(circle, #FFFFFF 0%, #f7b7b1 100%);
+}
+header .header_container .main_nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr; /* Центр занимает auto, боковые - 1fr */
+  align-items: center;
+  justify-content: center;
+  column-gap: 33px;
+}
+header .header_container .main_nav nav {
+  width: fit-content;
+}
+header .header_container .main_nav nav ul {
+  display: flex;
+  list-style: none;
+  column-gap: 33px;
+  padding: 0;
+  width: fit-content;
+}
+header .header_container .main_nav nav ul a {
+  text-decoration: none;
+  color: #CE3939;
+  white-space: nowrap;
+  cursor: pointer;
+}
+header .header_container .main_nav nav ul li {
+  font-size: 45px;
+  font-family: "Gerislan";
+  font-weight: 500;
+  cursor: pointer;
+}
+header .header_container .main_nav .nav_inicio {
+  margin-left: auto;
+}
+header .header_container .main_nav .logo {
+  width: 158px;
+  height: auto;
+}
+header .header_container .main_nav .nav_carta {
+  margin-right: auto;
+}
+
+main {
+  margin-top: 120px;
+}
+main .heroSection {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+main .heroSection img {
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 5px 5px -4px rgba(0, 0, 0, 0.413);
+}
+main .heroSection h1 {
+  position: absolute;
+  top: 50%; /* Позиция текста по вертикали */
+  left: 50%; /* Позиция текста по горизонтали */
+  transform: translate(-50%, -50%); /* Центрирование текста относительно контейнера */
+  color: white; /* Цвет текста */
+  text-align: center; /* Выравнивание текста по центру */
+  /* font-size: 110px; */
+  font-size: 6.5vw;
+  white-space: nowrap;
+  font-weight: 100;
+  padding: 0 50px;
+}
+main .aboutSection {
+  background-image: url("../images/2.png");
+  background-size: cover;
+  background-position: 50% 2%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+main .aboutSection .about_inner .upper_decoration {
+  padding-top: 50px;
+}
+main .aboutSection .about_inner .down_decoration {
+  padding-bottom: 50px;
+}
+main .aboutSection .about_inner .decoration_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .aboutSection .about_inner .decoration_container img {
+  width: 50%;
+  max-width: 100%;
+}
+main .aboutSection .about_inner .about_first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 150px;
+  margin-top: 80px;
+  padding: 0 100px;
+}
+main .aboutSection .about_inner .about_first .about_first_text {
+  max-width: 720px;
+  width: 100%;
+}
+main .aboutSection .about_inner .about_first .about_first_text h3 {
+  white-space: nowrap;
+  color: #B53226;
+  /* font-size: 40px; */
+  font-size: clamp(16px, 3vw, 46px);
+  font-family: "Gerislan";
+  font-weight: 400;
+  /* max-width: 390px; */
+}
+main .aboutSection .about_inner .about_first .about_first_text p {
+  margin-top: 30px;
+  font-family: "Gerislan";
+  /* font-size: 22px; */
+  font-size: clamp(12px, 2vw, 20px);
+  color: #5B1B1B;
+  text-align: justify;
+  line-height: 120%;
+  /*  max-width: 390px; */
+}
+main .aboutSection .about_inner .about_first .image_container {
+  width: 100%;
+  max-width: 850px;
+  overflow: hidden;
+}
+main .aboutSection .about_inner .about_first .image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .aboutSection .about_inner .about_second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 150px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 0 100px;
+}
+main .aboutSection .about_inner .about_second .about_second_text {
+  max-width: 720px;
+  width: 100%;
+}
+main .aboutSection .about_inner .about_second .about_second_text h3 {
+  white-space: nowrap;
+  color: #B53226;
+  /* font-size: 40px; */
+  font-size: clamp(16px, 3vw, 46px);
+  font-family: "Gerislan";
+  font-weight: 400;
+  /* max-width: 441px; */
+  margin-left: auto;
+}
+main .aboutSection .about_inner .about_second .about_second_text p {
+  margin-top: 30px;
+  font-family: "Gerislan";
+  /* font-size: 22px; */
+  font-size: clamp(12px, 2vw, 20px);
+  color: #5B1B1B;
+  text-align: justify;
+  line-height: 120%;
+  /* max-width: 441px; */
+  margin-left: auto;
+}
+main .aboutSection .about_inner .about_second .image_container {
+  width: 100%;
+  max-width: 850px;
+  overflow: hidden;
+}
+main .aboutSection .about_inner .about_second .image_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .menuSection {
+  background-image: url("../images/3.png");
+  background-size: cover;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  border-top: 4px solid #823226;
+}
+main .menuSection .menu_inner {
+  padding-bottom: 50px;
+}
+main .menuSection .menu_inner h3 {
+  font-size: 90px;
+  font-family: "Gerislan";
+  font-weight: 400;
+  color: #CE3939;
+  text-align: center;
+  padding-top: 50px;
+}
+main .menuSection .menu_inner .menu_buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем кнопки по горизонтали */
+  justify-content: center;
+  row-gap: 30px;
+  margin-top: 40px;
+}
+main .menuSection .menu_inner .menu_buttons button {
+  width: 500px;
+  font-size: 55px;
+  font-family: "Gerislan";
+  font-weight: 400;
+  padding: 10px 20px;
+  background-color: #E18F90;
+  border-radius: 54px;
+  border-color: #E18F90;
+  border-width: 0px;
+  cursor: pointer;
+  color: white;
+}
+main .menuSection .menu_inner .menu_buttons button:hover {
+  scale: 1.01;
+}
+main .menuSection .menu_inner .menu_buttons button:active {
+  scale: 0.99;
+}
+main .menuImgSection {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+main .menuImgSection img {
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 5px 5px -4px rgba(0, 0, 0, 0.413);
+}
+main .contactsSection {
+  background-image: url("../images/contactBackground.png");
+  background-size: cover;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+main .contactsSection .contacts_inner .upper_decoration {
+  padding-top: 50px;
+}
+main .contactsSection .contacts_inner .down_decoration {
+  padding-bottom: 50px;
+}
+main .contactsSection .contacts_inner .decoration_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .contactsSection .contacts_inner .decoration_container img {
+  width: 50%;
+  max-width: 100%;
+}
+main .contactsSection .contacts_inner .social {
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 80%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 88px;
+  padding: 80px 60px 70px 60px;
+}
+main .contactsSection .contacts_inner .social h4 {
+  color: #B53226;
+  font-family: "Gerislan";
+  font-weight: 400;
+  font-size: 45px;
+  text-align: center;
+}
+main .contactsSection .contacts_inner .social .socialIconsContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 80px;
+}
+main .contactsSection .contacts_inner .social .socialIconsContainer img {
+  width: 100px;
+}
+main .contactsSection .contacts_inner .social .socialIconsContainer img:hover {
+  scale: 1.03;
+}
+main .contactsSection .contacts_inner .social .socialIconsContainer img:active {
+  scale: 0.99;
+}
+main .contactsSection .contacts_inner .mapContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+main .contactsSection .contacts_inner .mapContainer .mapContainerInner {
+  position: relative;
+  overflow: hidden;
+  max-width: 1000px;
+  width: 100%;
+  height: 450px;
+  border-radius: 75px;
+  border: 5px solid #E18F90;
+}
+main .contactsSection .contacts_inner .mapContainer .mapContainerInner iframe {
+  border-radius: 72px;
+  width: 1000px;
+  border: none;
+}
+main .contactsSection .contacts_inner .instaTikTokContainer {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 80%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 88px;
+  padding: 80px 60px 70px 60px;
+}
+main .contactsSection .contacts_inner .instaTikTokContainer h4 {
+  color: #B53226;
+  font-family: "Gerislan";
+  font-weight: 400;
+  font-size: 45px;
+  text-align: center;
+}
+main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsContainers {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 80px;
+}
+main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsContainers img {
+  width: 100px;
+}
+main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsContainers img:hover {
+  scale: 1.03;
+}
+main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsContainers img:active {
+  scale: 0.99;
+}
+
+footer {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+footer .footer_container {
+  display: flex;
+  flex-direction: column; /* Элементы располагаются по вертикали */
+  justify-content: flex-end;
+  height: 146px;
+  background: radial-gradient(circle, #FFFFFF 0%, #f7b7b1 100%);
+}
+footer .footer_container h5 {
+  color: #000000;
+  font-family: "Gerislan";
+  font-weight: 400;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
