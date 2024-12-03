@@ -95,7 +95,7 @@ function changeLanguage(language) {
 
 const burger = document.querySelector('.burger');
 const smallNav = document.querySelector('.small-nav');
-const navLinks = document.querySelectorAll('.small-nav a'); // Получаем все ссылки в бургер-меню
+const navLinks = document.querySelectorAll('.small-nav a'); 
 
 
 burger.addEventListener('click', () => {
@@ -138,12 +138,12 @@ document.addEventListener("DOMContentLoaded", () => {
     
     slides.style.transform = `translateX(-${currentIndex * 100}vw)`;
   
-   
+    
     document.querySelectorAll("img").forEach((img) => {
       img.setAttribute("draggable", "false");
     });
   
-    
+   
     const showSlide = (index) => {
       if (isTransitioning) return;
       isTransitioning = true;
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
       slides.style.transform = `translateX(-${index * 100}vw)`;
     };
   
-   
+    
     slides.addEventListener("transitionend", () => {
       if (!isTransitioning) return;
       isTransitioning = false;
@@ -168,12 +168,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   
-   
+    
     const startSwipe = (x) => {
       if (isTransitioning) return;
       isDragging = true;
       startX = x;
-      slides.style.transition = "none"; 
+      slides.style.transition = "none";
     };
   
     const moveSwipe = (x) => {
@@ -211,16 +211,31 @@ document.addEventListener("DOMContentLoaded", () => {
     slides.addEventListener("mouseleave", () => (isDragging = false));
   
     
-    const autoSlide = setInterval(() => {
-      if (!isDragging && !isTransitioning) {
-        currentIndex++;
-        showSlide(currentIndex);
-      }
-    }, 3000);
+    let autoSlideInterval;
+    const startAutoSlide = () => {
+      autoSlideInterval = setInterval(() => {
+        if (!isDragging && !isTransitioning) {
+          currentIndex++;
+          showSlide(currentIndex);
+        }
+      }, 2000);
+    };
   
-    
-    slides.addEventListener("mousedown", () => clearInterval(autoSlide));
-    slides.addEventListener("touchstart", () => clearInterval(autoSlide));
-  });
+   
+    const stopAutoSlide = () => {
+      clearInterval(autoSlideInterval);
+    };
   
+   
+    slides.addEventListener("mousedown", stopAutoSlide);
+    slides.addEventListener("touchstart", stopAutoSlide);
+  
+   
+    slides.addEventListener("mouseup", startAutoSlide);
+    slides.addEventListener("mouseleave", startAutoSlide);
+    slides.addEventListener("touchend", startAutoSlide);
+  
+   
+    startAutoSlide();
+});
   

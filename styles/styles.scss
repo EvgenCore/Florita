@@ -515,47 +515,37 @@ main{
     }
 
     .slider {
-        width: 100%; /* Полная ширина экрана */
-        height: fit-content;
+        width: 100vw;
+        height: 55vh; 
         overflow: hidden;
         position: relative;
-        user-drag: none; /* Отключает перетаскивание изображения */
-        user-select: none; /* Отключает выделение текста, если есть */
-        -webkit-user-drag: none;
+      
         .slides {
           display: flex;
           height: 100%;
-          transition: transform 0.5s ease-in-out; /* Плавный переход */
-          touch-action: pan-y; /* Обработка горизонтальных свайпов */
+          transition: transform 0.5s ease-in-out;
         }
       
         .slide {
           flex-shrink: 0;
-          width: 100vw; /* Слайд занимает ширину экрана */
-          height: 236px; /* Слайд занимает высоту экрана */
-          position: relative;
+          width: 100vw; 
+          height: 100%;
+          box-sizing: border-box;
       
           img {
             width: 100%;
-            height: auto;
-            object-fit: cover; /* Обеспечивает обрезку изображения для заполнения */
+            height: 100%;
+            object-fit: cover;
+          }
+      
+          
+          &:not(:last-child) {
+            border-right: 2px solid rgba(0, 0, 0, 0.879);
           }
         }
-    }
+      }
     
-/*     .menuImgSection{
-        position: relative;
-        display: block;
-        width: 100%;
-        img{
-            width: 100%;
-            max-width: 1920px;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            box-shadow: 0 5px 5px -4px rgba(0, 0, 0, 0.413);
-        }
-    } */
+
 
     .contactsSection{
         background-image: url('../images/contactBackground.png');
@@ -686,6 +676,14 @@ main{
 
 
 
+}
+
+@media (max-width: 1920px){
+    main{
+        .slider{
+            height: 80vh;
+        }
+    }
 }
 
 
@@ -1243,6 +1241,9 @@ main{
                     }
                 }
             }
+        }
+        .slider{
+            height: 40vh;
         }
     }
 }
