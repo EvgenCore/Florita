@@ -45,10 +45,10 @@
                 
                 <div class="small-nav">
                     <ul  id="nav-links">
-                        <li id="smallNavInicio"><a href="#main">INICIO</a></li>
-                        <li id="smallNavAbout"><a href="#about">NOSOTROS</a></li>
-                        <li id="smallNavMenu"><a href="#menu">CARTA</a></li>
-                        <li id="smallNavContacts"><a href="#contacts">CONTACTOS</a></li>
+                        <a href="#main"><li id="smallNavInicio">INICIO</li></a>
+                        <a href="#about"><li id="smallNavAbout">NOSOTROS</li></a>
+                        <a href="#menu"><li id="smallNavMenu">CARTA</li></a>
+                        <a href="#contacts"><li id="smallNavContacts">CONTACTOS</li></a>
                     </ul>
 
                     <div class="language_nav-small">
@@ -64,6 +64,8 @@
                     <div id="nav-reserva" class="small-reservar_container">
                         <a href="#" id="reserveBtn">RESERVA</a>
                     </div>
+
+                    <a href="#main"><img class="logo" src="./images/Logo.svg" alt="Florita logo"></a>
                 </div>
 
                 <button class="burger" id="burger">
@@ -136,8 +138,25 @@
             </div>
         </section>
         
-        <section class="menuImgSection">
-            <img src="./images/menuImg.png" alt="menu image">
+        <section class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="./images/slider/sliderImg1.jpg" alt="Слайд 1">
+                </div>
+                <div class="slide">
+                    <img src="./images/slider/sliderImg2.jpg" alt="Слайд 2">
+                </div>
+                <div class="slide">
+                    <img src="./images/slider/sliderImg3.jpg" alt="Слайд 2">
+                </div>
+                <div class="slide">
+                    <img src="./images/slider/sliderImg4.jpg" alt="Слайд 2">
+                </div>
+                <div class="slide">
+                    <img src="./images/slider/sliderImg5.jpg" alt="Слайд 2">
+                </div>
+            </div>
+            
         </section>
 
         <section class="contactsSection" id="contacts">
@@ -151,7 +170,7 @@
                     <div class="social">
                         <h4 id="socialTitle">Lorem ipsum dolor sit ametvel pharetra justo tempor</h4>
                         <div class="socialIconsContainer">
-                            <a href="#"><img src="./images/gmail.svg" alt="Gmail"></a>
+                            <a href="#"><img src="./images/gmail.svg" class="gmail" alt="Gmail"></a>
                             <a href="#"><img src="./images/whatsapp.svg" alt="Whatsapp"></a>
                             <a href="#"><img src="./images/phone.svg" alt="Phone"></a>
                         </div>
@@ -166,7 +185,7 @@
                     <div class="instaTikTokContainer">
                         <h4 id="instaTikTokContainerTitle">Nuestras redes sociales</h4>
                         <div class="instaTikTokIconsContainers">
-                            <a href="#"><img src="./images/instagram.svg" alt="instagram"></a>
+                            <a href="#"><img src="./images/insta.svg" alt="instagram"></a>
                             <a href="#"><img src="./images/tiktok.svg" alt="tiktok"></a>
                         </div> 
                     </div>
@@ -180,11 +199,7 @@
         </section>
     </main>
 
-<!--     <footer>
-        <div class="footer_container">
-            <h5>2024 CasaFlorita</h5>
-        </div>
-    </footer> -->
+
 
     <script src="./scripts/main.js" defer></script>
 </body>

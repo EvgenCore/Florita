@@ -89,11 +89,11 @@ header {
 
         .small-nav {
             position: fixed;
-            top: 99px;
+            top: 59px;
             right: -100%;
             width: 150px;
             height: 100%;
-            background: linear-gradient(to right, #FFFFFF 0%, #f7b7b1 100%);
+            background: #f7b7b1;
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -101,8 +101,12 @@ header {
             transition: right 0.3s ease-in-out;
           
             .logo {
-              margin-bottom: 2rem;
+                margin: 20px auto;
+                width: 80%;
+                display: flex;
+                justify-content: center;
             }
+           
             .language_nav-small{
                 display: flex;
                 justify-content: center;
@@ -128,33 +132,36 @@ header {
             }
           
             ul {
+                
               display: flex;
               flex-direction: column;
               list-style: none;
               padding: 10px 10px;
               margin: 0;
               row-gap: 15px;
-              li{
+
+              a{
                 text-decoration: none;
-                font-size: 25px; 
+                font-size: 27px; 
                 font-family: 'Gerislan';
                 font-weight: 400;
                 cursor: pointer;
                 color: #CE3939;
                 white-space: nowrap;
                 cursor: pointer;
-                a{
-
-                    text-decoration: none;
-                    font-size: 25px; 
-                    font-family: 'Gerislan';
-                    font-weight: 400;
-                    cursor: pointer;
-                    color: #CE3939;
-                    white-space: nowrap;
-                    cursor: pointer;
+                li{
+                  text-decoration: none;
+                   
+                  font-family: 'Gerislan';
+                  font-weight: 400;
+                  cursor: pointer;
+                  color: #CE3939;
+                  white-space: nowrap;
+                  cursor: pointer;
                 }
+
               }
+
             }
           
             .small-reservar_container {
@@ -323,9 +330,9 @@ main{
             color: white;
             text-align: center;
             /* font-size: 110px; */
-            font-size: 6.5vw;
+            font-size: 6.8vw;
             white-space: nowrap;
-            font-weight: 100;
+            font-weight: 300;
             padding: 0 50px;
             
             
@@ -506,8 +513,37 @@ main{
             }
         }
     }
+
+    .slider {
+        width: 100%; /* Полная ширина экрана */
+        height: fit-content;
+        overflow: hidden;
+        position: relative;
+        user-drag: none; /* Отключает перетаскивание изображения */
+        user-select: none; /* Отключает выделение текста, если есть */
+        -webkit-user-drag: none;
+        .slides {
+          display: flex;
+          height: 100%;
+          transition: transform 0.5s ease-in-out; /* Плавный переход */
+          touch-action: pan-y; /* Обработка горизонтальных свайпов */
+        }
+      
+        .slide {
+          flex-shrink: 0;
+          width: 100vw; /* Слайд занимает ширину экрана */
+          height: 236px; /* Слайд занимает высоту экрана */
+          position: relative;
+      
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Обеспечивает обрезку изображения для заполнения */
+          }
+        }
+    }
     
-    .menuImgSection{
+/*     .menuImgSection{
         position: relative;
         display: block;
         width: 100%;
@@ -519,7 +555,7 @@ main{
             margin: 0 auto;
             box-shadow: 0 5px 5px -4px rgba(0, 0, 0, 0.413);
         }
-    }
+    } */
 
     .contactsSection{
         background-image: url('../images/contactBackground.png');
@@ -780,7 +816,7 @@ main{
 
 @media (max-width: 1024px){
     html{
-        scroll-padding-top: 100px;
+        scroll-padding-top: 60px;
     }
     header{
         .header_container{
@@ -946,9 +982,13 @@ main{
 }
 
 @media (max-width: 768px){
+
+    
     header{
         .header_container{
-            justify-content:space-between;
+            background: #f7b7b1;
+            height: 60px;
+            justify-content:end;
             padding: 0 40px;
             .burger {
                 display: flex;
@@ -962,6 +1002,9 @@ main{
                 .nav_carta{
                     display: none;
                 }
+                .logo{
+                    display: none;
+                }
             }
             
             
@@ -969,6 +1012,7 @@ main{
     }
 
     main{
+        margin-top: 60px;
         .aboutSection{
             .about_inner{
                 .about_first{
@@ -977,10 +1021,10 @@ main{
                     .about_first_text{
                         
                         h3{
-                            font-size: 2.5vw;
+                            font-size: 25px;
                         }
                         p{
-                            font-size: 12px;
+                            font-size: 15px;
                             margin-top: 15px;
                         }
                     }
@@ -990,10 +1034,10 @@ main{
                     padding: 0 20px;
                     .about_second_text{
                         h3{
-                            font-size: 2.5vw;
+                            font-size: 25px;
                         }
                         p{
-                            font-size: 12px;
+                            font-size: 15px;
                             margin-top: 15px;
                         }
                     }
@@ -1067,6 +1111,7 @@ main{
     }
 
     main{
+
        .aboutSection{
         .about_inner{
             .upper_decoration{
@@ -1088,11 +1133,13 @@ main{
                     text-align: center;
                         order: 1;
                     h3{
-                        font-size: 20px;
+                        text-align: center;
+                        font-size: 23px;
                     }
                     p{
-                        
+                        font-size: 18px;
                         margin-top: 15px;
+                        text-align: center;
                     }
                 }
                 img{
@@ -1105,13 +1152,15 @@ main{
                 margin-bottom: 20px;
                 .about_second_text{
                     margin-top: 10px;
-                    text-align: center;
+                    
                     h3{
-                        font-size: 20px;
+                        text-align: center;
+                        font-size: 25px;
                     }
                     p{
-                       
+                        font-size: 18px;
                         margin-top: 15px;
+                        text-align: center;
                     }
                 }
             }
@@ -1119,18 +1168,20 @@ main{
        }
 
         .menuSection{
+            background-image: url('../images/carta_small_background.png');
+            
             .menu_inner{
-                padding-bottom: 30px;
+                padding-bottom: 50px;
                 h3{
-                    font-size: 50px; 
+                    font-size: 70px; 
                     padding-top: 20px;
                 }
                 .menu_buttons{
-                    margin-top: 10px;
-                    row-gap: 10px;
+                    margin-top: 15px;
+                    row-gap: 15px;
                     button{
                         font-size: 30px; 
-                        width: 250px;
+                        width: 300px;
                     }
                 }
             }  
@@ -1154,13 +1205,16 @@ main{
                     padding: 20px 10px 20px 10px;
                     border-radius: 20px;
                     h4{
-                        font-size: 18px;
+                        font-size: 22px;
                     }
                     .socialIconsContainer{
                         margin-top: 20px;
                         column-gap: 40px;
+                        .gmail{
+                            width: 65px;
+                        }
                         img{
-                            width: 40px;
+                            width: 50px;
                         }
                     }
                 }
@@ -1174,17 +1228,17 @@ main{
                     }
                 }
                 .instaTikTokContainer{
-                    margin-top: 20px;
+                    margin-top: 30px;
                     padding: 20px 10px 20px 10px;
                     border-radius: 20px;
                     h4{
-                        font-size: 18px;
+                        font-size: 24px;
                     }
                     .instaTikTokIconsContainers{ 
                         margin-top: 20px;
                         column-gap: 40px;
                         img{
-                            width: 50px;
+                            width: 60px;
                         }
                     }
                 }
