@@ -1,6 +1,7 @@
-@import 'variables';
-@import 'mixins';
-@import 'fonts';
+@use 'fonts';
+@use 'variables';
+
+
 
 html{
     scroll-padding-top: 120px;
@@ -252,7 +253,7 @@ header {
 
                     }
                     li {
-                        font-size: 40px; 
+                        font-size: 36px; 
                         font-family: 'Gerislan';
                         font-weight: 400;
                         cursor: pointer;
@@ -263,7 +264,7 @@ header {
                 text-align: center;
                 display: flex;
                 align-items: center;
-                column-gap: 45px;
+                column-gap: 35px;
                 margin-left: auto;
             }
           
@@ -276,7 +277,7 @@ header {
                 text-align: center;
                 display: flex;
                 align-items: center;
-                column-gap: 45px;
+                column-gap: 35px;
             }
         }
 
@@ -515,7 +516,7 @@ main{
     }
 
     .slider {
-        width: 100vw;
+        width: 100%;
         height: 55vh; 
         overflow: hidden;
         position: relative;

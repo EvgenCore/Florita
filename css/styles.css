@@ -231,7 +231,7 @@ header .header_container .main_nav nav ul a {
   cursor: pointer;
 }
 header .header_container .main_nav nav ul li {
-  font-size: 40px;
+  font-size: 36px;
   font-family: "Gerislan";
   font-weight: 400;
   cursor: pointer;
@@ -240,7 +240,7 @@ header .header_container .main_nav .nav_inicio {
   text-align: center;
   display: flex;
   align-items: center;
-  column-gap: 45px;
+  column-gap: 35px;
   margin-left: auto;
 }
 header .header_container .main_nav .logo {
@@ -252,7 +252,7 @@ header .header_container .main_nav .nav_carta {
   text-align: center;
   display: flex;
   align-items: center;
-  column-gap: 45px;
+  column-gap: 35px;
 }
 header .header_container .language_nav .button_container {
   display: flex;
@@ -461,7 +461,7 @@ main .menuSection .menu_inner .menu_buttons button:active {
   scale: 0.99;
 }
 main .slider {
-  width: 100vw;
+  width: 100%;
   height: 55vh;
   overflow: hidden;
   position: relative;
