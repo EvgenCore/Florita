@@ -45,6 +45,9 @@ header .header_container {
   justify-content: center;
   padding: 0 30px;
 }
+header .header_container .logo2 {
+  display: none;
+}
 header .header_container .burger {
   display: none;
   flex-direction: column;
@@ -819,8 +822,14 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   header .header_container {
     background: #f7b7b1;
     height: 60px;
-    justify-content: end;
+    justify-content: space-between;
     padding: 0 40px;
+  }
+  header .header_container .logo2 {
+    display: block;
+  }
+  header .header_container .logo2 img {
+    width: 60%;
   }
   header .header_container .burger {
     display: flex;

@@ -155,6 +155,13 @@ navLinks.forEach(link => {
   });
 });
 
+document.addEventListener('click', (e) => {
+  if (!smallNav.contains(e.target) && !burger.contains(e.target)) {
+    burger.classList.remove('burger--active');
+    smallNav.classList.remove('small-nav--active');
+  }
+});
+
 languageNav.forEach(link => {
   link.addEventListener('click', () => {
     burger.classList.remove('burger--active'); 

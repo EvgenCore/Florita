@@ -41,6 +41,10 @@ header {
         background: radial-gradient(circle, #FFFFFF 0%, #f7b7b1 100%);
         justify-content:center;
         padding: 0 30px;
+
+        .logo2{
+            display: none;
+        }
   
         .burger {
             display: none;
@@ -987,8 +991,15 @@ main{
         .header_container{
             background: #f7b7b1;
             height: 60px;
-            justify-content:end;
+            justify-content:space-between;
             padding: 0 40px;
+
+            .logo2{
+                display: block;
+                img{
+                    width: 60%;
+                }
+            }
             .burger {
                 display: flex;
                 z-index: 1000;
