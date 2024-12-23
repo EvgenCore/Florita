@@ -139,17 +139,23 @@ function changeLanguage(language) {
 const burger = document.querySelector('.burger');
 const smallNav = document.querySelector('.small-nav');
 const navLinks = document.querySelectorAll('.small-nav a'); 
+const languageNav = document.querySelectorAll('.button_container button'); 
 
 
 burger.addEventListener('click', () => {
- 
   burger.classList.toggle('burger--active');
-  
   smallNav.classList.toggle('small-nav--active');
 });
 
 
 navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    burger.classList.remove('burger--active'); 
+    smallNav.classList.remove('small-nav--active');
+  });
+});
+
+languageNav.forEach(link => {
   link.addEventListener('click', () => {
     burger.classList.remove('burger--active'); 
     smallNav.classList.remove('small-nav--active');
