@@ -829,7 +829,7 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
     display: block;
   }
   header .header_container .logo2 img {
-    width: 60%;
+    width: 70%;
   }
   header .header_container .burger {
     display: flex;
@@ -915,9 +915,6 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   }
   header .header_container {
     padding: 0 15px;
-  }
-  header .header_container .logo2 img {
-    width: 50%;
   }
   main .aboutSection .about_inner .upper_decoration {
     padding-top: 20px;
