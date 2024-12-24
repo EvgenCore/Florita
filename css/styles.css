@@ -308,7 +308,7 @@ main .heroSection h1 {
   padding: 0 50px;
 }
 main .aboutSection {
-  background-image: url("../images/2.png");
+  background-image: url("../images/aboutBackground.png");
   background-size: cover;
   background-position: 50% 2%;
   background-repeat: no-repeat;
@@ -417,7 +417,7 @@ main .aboutSection .about_inner .about_second .image_container img {
   object-fit: cover;
 }
 main .menuSection {
-  background-image: url("../images/3.png");
+  background-image: url("../images/menuBackground.png");
   background-size: cover;
   background-position: 50% 100%;
   background-repeat: no-repeat;
@@ -507,7 +507,7 @@ main .contactsSection .contacts_inner .decoration_container {
   align-items: center;
 }
 main .contactsSection .contacts_inner .decoration_container img {
-  width: 50%;
+  width: 70%;
   max-width: 100%;
 }
 main .contactsSection .contacts_inner .social {

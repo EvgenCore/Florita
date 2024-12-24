@@ -205,11 +205,10 @@ header {
             &--active {
               right: 0;
             }
-          }
+        }
       
       
-        
-
+    
         .reservar_container{
             
             a{
@@ -345,7 +344,7 @@ main{
     }
 
     .aboutSection{
-        background-image: url('../images/2.png');
+        background-image: url('../images/aboutBackground.png');
         background-size: cover; 
         
         background-position: 50% 2%;
@@ -468,7 +467,7 @@ main{
     }
 
     .menuSection{
-        background-image: url('../images/3.png');
+        background-image: url('../images/menuBackground.png');
         background-size: cover; 
        
         background-position: 50% 100%;
@@ -548,10 +547,8 @@ main{
             border-right: 2px solid rgba(0, 0, 0, 0.879);
           }
         }
-      }
+    }
     
-
-
     .contactsSection{
         background-image: url('../images/contactBackground.png');
         background-size: cover; 
@@ -573,7 +570,7 @@ main{
                 align-items: center; 
                 
                 img{
-                    width: 50%;
+                    width: 70%;
                     max-width: 100%;
 
                 }
