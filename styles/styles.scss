@@ -253,6 +253,22 @@ header {
                         color: #CE3939;
                         white-space: nowrap;
                         cursor: pointer;
+                        position: relative;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%) scaleX(0);
+                            width: 95%;
+                            height: 2px;
+                            background-color: #CE3939;
+                            transition: transform 0.3s ease-in-out;
+                        }
+                    
+                        &:hover::after {
+                            transform: translateX(-50%) scaleX(1);
+                        }
 
                     }
                     li {
@@ -384,6 +400,7 @@ main{
                     width: 100%;
                     h3{
                         white-space: nowrap; 
+                        text-align: center;
                         color: #B53226;
                         /* font-size: 40px; */
                         font-size: 3vw;
@@ -396,7 +413,7 @@ main{
                         margin-top: 30px;
                         font-family: 'Gerislan';
                         /* font-size: 22px; */
-                        font-size: clamp(12px, 2vw, 20px);
+                        font-size: 1.5vw;
                         color: #5B1B1B;
                         text-align: justify;
                         line-height: 120%;
@@ -431,9 +448,10 @@ main{
                     width: 100%;
                     h3{ 
                         white-space: nowrap; 
+                        text-align: center;
                         color: #B53226;
                         /* font-size: 40px; */
-                        font-size: clamp(16px, 3vw, 46px);
+                        font-size: 3vw;
                         font-family: 'Gerislan';
                         font-weight: 400;
                         /* max-width: 441px; */
@@ -443,7 +461,7 @@ main{
                         margin-top: 30px;
                         font-family: 'Gerislan';
                         /* font-size: 22px; */
-                        font-size: clamp(12px, 2vw, 20px);
+                        font-size: 1.5vw;
                         color: #5B1B1B;
                         text-align: justify;
                         line-height: 120%;
@@ -599,6 +617,9 @@ main{
                     justify-content: center;
                     align-items: center;
                     column-gap: 80px;
+                    .gmail{
+                        width: 120px;
+                    }
                     img{
                         width: 100px;
                         transition: scale .3s;
@@ -653,6 +674,7 @@ main{
                     font-size: 45px;
                     text-align: center;
                 }
+                
                 .instaTikTokIconsContainers{
                     margin-top: 50px;
                     display: flex;
@@ -663,6 +685,9 @@ main{
                         width: 100px;
                         transition: scale .3s;
                     } 
+                    .ticTokIcon{
+                        width: 85px;
+                    }
                     img:hover{
                         scale: 1.03;
                     }
@@ -782,6 +807,9 @@ main{
                     }
                     .socialIconsContainer{
                         margin-top: 40px;
+                        .gmail{
+                            width: 110px;
+                        }
                         img{
                             width: 90px;
                         }
@@ -949,6 +977,9 @@ main{
                         img{
                             width: 70px;
                         }
+                        .gmail{
+                            width: 90px;
+                        }
                     }
                 }
                 .mapContainer{
@@ -973,6 +1004,9 @@ main{
                         margin-top: 20px;
                         img{
                             width: 70px;
+                        }
+                        .ticTokIcon{
+                            width: 63px;
                         }
                     }
                 }
@@ -1080,6 +1114,9 @@ main{
                         img{
                             width: 50px;
                         }
+                        .gmail{
+                            width: 65px;
+                        }
                     }
                 }
                 .mapContainer{
@@ -1098,6 +1135,9 @@ main{
                     .instaTikTokIconsContainers{ 
                         img{
                             width: 50px;
+                        }
+                        .ticTokIcon{
+                            width: 45px;
                         }
                     }
                 }

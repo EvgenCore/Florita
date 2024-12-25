@@ -232,6 +232,21 @@ header .header_container .main_nav nav ul a {
   color: #CE3939;
   white-space: nowrap;
   cursor: pointer;
+  position: relative;
+}
+header .header_container .main_nav nav ul a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 95%;
+  height: 2px;
+  background-color: #CE3939;
+  transition: transform 0.3s ease-in-out;
+}
+header .header_container .main_nav nav ul a:hover::after {
+  transform: translateX(-50%) scaleX(1);
 }
 header .header_container .main_nav nav ul li {
   font-size: 36px;
@@ -344,6 +359,7 @@ main .aboutSection .about_inner .about_first .about_first_text {
 }
 main .aboutSection .about_inner .about_first .about_first_text h3 {
   white-space: nowrap;
+  text-align: center;
   color: #B53226;
   /* font-size: 40px; */
   font-size: 3vw;
@@ -355,7 +371,7 @@ main .aboutSection .about_inner .about_first .about_first_text p {
   margin-top: 30px;
   font-family: "Gerislan";
   /* font-size: 22px; */
-  font-size: clamp(12px, 2vw, 20px);
+  font-size: 1.5vw;
   color: #5B1B1B;
   text-align: justify;
   line-height: 120%;
@@ -387,9 +403,10 @@ main .aboutSection .about_inner .about_second .about_second_text {
 }
 main .aboutSection .about_inner .about_second .about_second_text h3 {
   white-space: nowrap;
+  text-align: center;
   color: #B53226;
   /* font-size: 40px; */
-  font-size: clamp(16px, 3vw, 46px);
+  font-size: 3vw;
   font-family: "Gerislan";
   font-weight: 400;
   /* max-width: 441px; */
@@ -399,7 +416,7 @@ main .aboutSection .about_inner .about_second .about_second_text p {
   margin-top: 30px;
   font-family: "Gerislan";
   /* font-size: 22px; */
-  font-size: clamp(12px, 2vw, 20px);
+  font-size: 1.5vw;
   color: #5B1B1B;
   text-align: justify;
   line-height: 120%;
@@ -533,6 +550,9 @@ main .contactsSection .contacts_inner .social .socialIconsContainer {
   align-items: center;
   column-gap: 80px;
 }
+main .contactsSection .contacts_inner .social .socialIconsContainer .gmail {
+  width: 120px;
+}
 main .contactsSection .contacts_inner .social .socialIconsContainer img {
   width: 100px;
   transition: scale 0.3s;
@@ -591,6 +611,9 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
 main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsContainers img {
   width: 100px;
   transition: scale 0.3s;
+}
+main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsContainers .ticTokIcon {
+  width: 85px;
 }
 main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsContainers img:hover {
   scale: 1.03;
@@ -662,6 +685,9 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   }
   main .contactsSection .contacts_inner .social .socialIconsContainer {
     margin-top: 40px;
+  }
+  main .contactsSection .contacts_inner .social .socialIconsContainer .gmail {
+    width: 110px;
   }
   main .contactsSection .contacts_inner .social .socialIconsContainer img {
     width: 90px;
@@ -792,6 +818,9 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   main .contactsSection .contacts_inner .social .socialIconsContainer img {
     width: 70px;
   }
+  main .contactsSection .contacts_inner .social .socialIconsContainer .gmail {
+    width: 90px;
+  }
   main .contactsSection .contacts_inner .mapContainer {
     margin: 30px auto 0px auto;
     max-width: 500px;
@@ -816,6 +845,9 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   }
   main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsContainers img {
     width: 70px;
+  }
+  main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsContainers .ticTokIcon {
+    width: 63px;
   }
 }
 @media (max-width: 768px) {
@@ -893,6 +925,9 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   main .contactsSection .contacts_inner .social .socialIconsContainer img {
     width: 50px;
   }
+  main .contactsSection .contacts_inner .social .socialIconsContainer .gmail {
+    width: 65px;
+  }
   main .contactsSection .contacts_inner .mapContainer {
     max-width: 400px;
   }
@@ -907,6 +942,9 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   }
   main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsContainers img {
     width: 50px;
+  }
+  main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsContainers .ticTokIcon {
+    width: 45px;
   }
 }
 @media (max-width: 568px) {
