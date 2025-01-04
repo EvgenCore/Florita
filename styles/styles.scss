@@ -357,13 +357,13 @@ main{
             white-space: nowrap;
             font-weight: 300;
             padding: 0 50px;
-            
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.879);
             
         }
     }
 
     .aboutSection{
-        background-image: url('../images/aboutBackground.png');
+        background-image: url('../images/aboutBackground.webp');
         background-size: cover; 
         
         background-position: 50% 2%;
@@ -488,7 +488,7 @@ main{
     }
 
     .menuSection{
-        background-image: url('../images/menuBackground.png');
+        background-image: url('../images/menuBackground.webp');
         background-size: cover; 
        
         background-position: 50% 100%;
@@ -571,7 +571,7 @@ main{
     }
     
     .contactsSection{
-        background-image: url('../images/contactBackground.png');
+        background-image: url('../images/contactBackground.webp');
         background-size: cover; 
         
         background-position: 50% 40%;
@@ -1220,7 +1220,7 @@ main{
        }
 
         .menuSection{
-            background-image: url('../images/carta_small_background.png');
+            background-image: url('../images/carta_small_background.webp');
             
             .menu_inner{
                 padding-bottom: 50px;
