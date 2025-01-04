@@ -162,12 +162,12 @@ document.addEventListener('click', (e) => {
   }
 });
 
-languageNav.forEach(link => {
+/* languageNav.forEach(link => {
   link.addEventListener('click', () => {
     burger.classList.remove('burger--active'); 
     smallNav.classList.remove('small-nav--active');
   });
-});
+}); */
 
 
 /* SLIDER */

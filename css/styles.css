@@ -113,7 +113,10 @@ header .header_container .small-nav .language_nav-small {
 }
 header .header_container .small-nav .language_nav-small .button_container {
   display: flex;
-  column-gap: 4px;
+  column-gap: 6px;
+  background-color: #D2797B;
+  border-radius: 10px;
+  padding: 10px 15px;
 }
 header .header_container .small-nav .language_nav-small .button_container button {
   font-family: "Gerislan";
@@ -125,7 +128,7 @@ header .header_container .small-nav .language_nav-small .button_container button
   border-radius: 5px;
   cursor: pointer;
   padding: 1px 1px;
-  color: #914740;
+  color: #FFFFFF;
 }
 header .header_container .small-nav .language_nav-small .button_container button:active {
   transform: scale(0.99);
@@ -169,7 +172,7 @@ header .header_container .small-nav .small-reservar_container {
   font-family: "Gerislan";
   font-weight: 400;
   font-size: 20px;
-  background-color: #E18F90;
+  background-color: #D2797B;
   border: none;
   cursor: pointer;
 }

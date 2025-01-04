@@ -117,7 +117,10 @@ header {
                 justify-content: center;
                 .button_container{
                     display: flex;
-                    column-gap: 4px;
+                    column-gap: 6px;
+                    background-color: #D2797B;
+                    border-radius: 10px;
+                    padding: 10px 15px;
                     button{
                         font-family: 'Gerislan';
                         font-weight: 400; 
@@ -128,7 +131,7 @@ header {
                         border-radius: 5px;
                         cursor: pointer;
                         padding: 1px 1px;
-                        color: #914740;
+                        color: #FFFFFF;
                     }
                     button:active{
                         transform: scale(0.99);
@@ -181,7 +184,7 @@ header {
               font-family: 'Gerislan';
               font-weight: 400; 
               font-size: 20px;
-              background-color: #E18F90;
+              background-color: #D2797B;
               border: none;
               cursor: pointer;
               a{
