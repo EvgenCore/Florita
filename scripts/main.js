@@ -85,7 +85,7 @@ const translations = {
 function changeLanguage(language) {
     
     const reserveBtn = document.getElementById("reserveBtn");
-    const navReserva = document.getElementById("nav-reserva");
+    const reserveBtnBurger = document.getElementById("reserveBtnBurger");
 
     const navInicio = document.getElementById("navInicio");
     const smallNavInicio = document.getElementById("smallNavInicio");
@@ -111,7 +111,7 @@ function changeLanguage(language) {
 
 
     reserveBtn.textContent = translations[language].reserve;
-    navReserva.textContent = translations[language].reserve;
+    reserveBtnBurger.textContent = translations[language].reserve;
 
     navInicio.textContent = translations[language].navInicio;
     smallNavInicio.textContent = translations[language].navInicio;
