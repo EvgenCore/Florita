@@ -497,7 +497,7 @@ main{
     }
 
     .menuSection{
-        background-image: url('../images/menuBackground.webp');
+        background-image: url('../images/carta_small_background.webp');
         background-size: cover; 
        
         background-position: 50% 100%;
@@ -506,45 +506,97 @@ main{
         border-top: 4px solid #823226; 
         .menu_inner{
             padding-bottom: 50px;
-            h3{
-                font-size: 90px; 
-                font-family: 'Gerislan';
-                font-weight: 400;    
-                color: #CE3939;
-                text-align: center;       
-                padding-top: 50px;  
-                cursor: default;   
-            }
-            .menu_buttons{
+           
+            column-count: 2;
+            column-gap: 16px; 
+            gap: 16px; 
+            .brunchSection{
+                cursor:default;
+                break-inside: avoid;
+                box-sizing: border-box;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                justify-content: center; 
-                row-gap: 30px;
-                margin-top: 40px;
-                
-                
-                button{
-                    width: 500px;
-                    font-size: 55px; 
+            
+                h3{
+                    color: #B53226;
+                    font-size: 40px;
                     font-family: 'Gerislan';
-                    font-weight: 400;  
-                    padding: 10px 20px;
-                    background-color: #E18F90;
-                    border-radius: 54px;
-                    border-color: #E18F90;
-                    border-width: 0px;
-                    cursor: pointer;
-                    color: white;
-                        
+                    font-weight: bold;
+                    text-align: center;
+                    margin-top: 30px;
                 }
-                button:hover{
-                    scale: 1.02;
+
+                hr{
+                    border: none; /* Убираем стандартное оформление */
+                    height: 1.5px; /* Толщина линии */
+                    background-color: #B53226; /* Цвет линии */
+                    margin: 20px auto; /* Отступы сверху и снизу */
+                    width: 60%;
+                    box-sizing: border-box;
                 }
-                button:active{
-                    scale: 0.99;
+                .dishes{
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    justify-content: center;
+                    row-gap: 30px;
+                    .dish{
+                        column-gap: 20px;
+                        display: flex;
+                        justify-content: center;
+                        .dishData{
+                            width: 40%;
+                            h4{
+                                color: #B53226;
+                                font-size: 24px;
+                                font-family: 'Gerislan';
+                                font-weight: bold;
+                            }
+                            p{
+                                margin-top: 5px;
+                                color: #B53226;
+                                font-size: 12px;
+                                font-family: 'Gerislan';
+                                font-style: italic;
+                            }
+
+                            ul{
+                                margin: 0;
+                                li{
+                                    color: #B53226;
+                                    font-size: 12px;
+                                    font-family: 'Gerislan';
+                                    font-style: italic;
+                                    margin-top: 5px;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                        p{
+                            color: #B53226;
+                            font-size: 24px;
+                            font-family: 'Gerislan';
+                            font-weight: bold;
+                        }
+                    }
                 }
             }
+
+            .smaller{
+                .dishes{
+                    .dish{
+                        .dishData{
+                            h4{
+                                font-size: 22px;
+                                font-family: 'Gerislan';
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+            
         }
     }
 
@@ -1105,18 +1157,7 @@ main{
 
         .menuSection{
             .menu_inner{
-                h3{
-                    font-size: 60px; 
-                    padding-top: 30px;
-                }
-                .menu_buttons{
-                    margin-top: 10px;
-                    row-gap: 10px;
-                    button{
-                        font-size: 30px; 
-                        width: 300px;
-                    }
-                }
+                column-count: 1;
             }  
         }
 
@@ -1236,17 +1277,27 @@ main{
             background-image: url('../images/carta_small_background.webp');
             
             .menu_inner{
-                padding-bottom: 50px;
-                h3{
-                    font-size: 70px; 
-                    padding-top: 20px;
-                }
-                .menu_buttons{
-                    margin-top: 15px;
-                    row-gap: 15px;
-                    button{
-                        font-size: 30px; 
-                        width: 300px;
+                .brunchSection{
+                    h3{
+                        font-size: 35px;
+                    }
+
+                    .dishes{
+                        .dish{
+                            column-gap: 40px;
+                            .dishData{
+                                width: 60%;
+                                h4{
+                                    font-size: 20px;
+                                }
+                                p{
+                                    font-size: 12px;
+                                }
+                            }
+                            p{
+                                font-size: 20px;
+                            }
+                        }
                     }
                 }
             }  

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: Gerislan;
   src: url("../assets/fonts/Gerislan.woff2") format("woff2");
@@ -444,7 +445,7 @@ main .aboutSection .about_inner .about_second .image_container img {
   object-fit: cover;
 }
 main .menuSection {
-  background-image: url("../images/menuBackground.webp");
+  background-image: url("../images/carta_small_background.webp");
   background-size: cover;
   background-position: 50% 100%;
   background-repeat: no-repeat;
@@ -453,42 +454,82 @@ main .menuSection {
 }
 main .menuSection .menu_inner {
   padding-bottom: 50px;
+  column-count: 2;
+  column-gap: 16px;
+  gap: 16px;
 }
-main .menuSection .menu_inner h3 {
-  font-size: 90px;
-  font-family: "Gerislan";
-  font-weight: 400;
-  color: #CE3939;
-  text-align: center;
-  padding-top: 50px;
+main .menuSection .menu_inner .brunchSection {
   cursor: default;
-}
-main .menuSection .menu_inner .menu_buttons {
+  break-inside: avoid;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+main .menuSection .menu_inner .brunchSection h3 {
+  color: #B53226;
+  font-size: 40px;
+  font-family: "Gerislan";
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+}
+main .menuSection .menu_inner .brunchSection hr {
+  border: none; /* Убираем стандартное оформление */
+  height: 1.5px; /* Толщина линии */
+  background-color: #B53226; /* Цвет линии */
+  margin: 20px auto; /* Отступы сверху и снизу */
+  width: 60%;
+  box-sizing: border-box;
+}
+main .menuSection .menu_inner .brunchSection .dishes {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   row-gap: 30px;
-  margin-top: 40px;
 }
-main .menuSection .menu_inner .menu_buttons button {
-  width: 500px;
-  font-size: 55px;
+main .menuSection .menu_inner .brunchSection .dishes .dish {
+  column-gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .dishData {
+  width: 40%;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .dishData h4 {
+  color: #B53226;
+  font-size: 24px;
   font-family: "Gerislan";
-  font-weight: 400;
-  padding: 10px 20px;
-  background-color: #E18F90;
-  border-radius: 54px;
-  border-color: #E18F90;
-  border-width: 0px;
-  cursor: pointer;
-  color: white;
+  font-weight: bold;
 }
-main .menuSection .menu_inner .menu_buttons button:hover {
-  scale: 1.02;
+main .menuSection .menu_inner .brunchSection .dishes .dish .dishData p {
+  margin-top: 5px;
+  color: #B53226;
+  font-size: 12px;
+  font-family: "Gerislan";
+  font-style: italic;
 }
-main .menuSection .menu_inner .menu_buttons button:active {
-  scale: 0.99;
+main .menuSection .menu_inner .brunchSection .dishes .dish .dishData ul {
+  margin: 0;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .dishData ul li {
+  color: #B53226;
+  font-size: 12px;
+  font-family: "Gerislan";
+  font-style: italic;
+  margin-top: 5px;
+  font-weight: bold;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish p {
+  color: #B53226;
+  font-size: 24px;
+  font-family: "Gerislan";
+  font-weight: bold;
+}
+main .menuSection .menu_inner .smaller .dishes .dish .dishData h4 {
+  font-size: 22px;
+  font-family: "Gerislan";
+  font-weight: bold;
 }
 main .slider {
   width: 100%;
@@ -919,17 +960,8 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
     font-size: 15px;
     margin-top: 15px;
   }
-  main .menuSection .menu_inner h3 {
-    font-size: 60px;
-    padding-top: 30px;
-  }
-  main .menuSection .menu_inner .menu_buttons {
-    margin-top: 10px;
-    row-gap: 10px;
-  }
-  main .menuSection .menu_inner .menu_buttons button {
-    font-size: 30px;
-    width: 300px;
+  main .menuSection .menu_inner {
+    column-count: 1;
   }
   main .contactsSection .contacts_inner .social h4 {
     font-size: 20px;
@@ -1019,20 +1051,23 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   main .menuSection {
     background-image: url("../images/carta_small_background.webp");
   }
-  main .menuSection .menu_inner {
-    padding-bottom: 50px;
+  main .menuSection .menu_inner .brunchSection h3 {
+    font-size: 35px;
   }
-  main .menuSection .menu_inner h3 {
-    font-size: 70px;
-    padding-top: 20px;
+  main .menuSection .menu_inner .brunchSection .dishes .dish {
+    column-gap: 40px;
   }
-  main .menuSection .menu_inner .menu_buttons {
-    margin-top: 15px;
-    row-gap: 15px;
+  main .menuSection .menu_inner .brunchSection .dishes .dish .dishData {
+    width: 60%;
   }
-  main .menuSection .menu_inner .menu_buttons button {
-    font-size: 30px;
-    width: 300px;
+  main .menuSection .menu_inner .brunchSection .dishes .dish .dishData h4 {
+    font-size: 20px;
+  }
+  main .menuSection .menu_inner .brunchSection .dishes .dish .dishData p {
+    font-size: 12px;
+  }
+  main .menuSection .menu_inner .brunchSection .dishes .dish p {
+    font-size: 20px;
   }
   main .contactsSection .contacts_inner .upper_decoration {
     padding-top: 20px;
