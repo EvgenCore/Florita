@@ -5,6 +5,8 @@ const translations = {
       navAbout: "ABOUT",
       navMenu: "MENU",
       navContact: "CONTACTS",
+
+      currentLang: "EN",
       
       about_first_text_title: "The taste is impeccable!",
       about_first_text_body: "We proudly offer you not only a variety of delicious dishes but also a unique experience that begins with the freshest ingredients and ends with masterfully prepared dishes that can satisfy even the highest gastronomic demands.",
@@ -20,6 +22,8 @@ const translations = {
         navAbout: "NOSOTROS",
         navMenu: "CARTA",
         navContact: "CONTACTOS",
+
+        currentLang: "ES",
 
         about_first_text_title: "¡El sabor es impecable!",
         about_first_text_body: "Con orgullo les ofrecemos no solo una variedad de platos deliciosos, sino también una experiencia única que comienza con los ingredientes más frescos y termina con platos magistralmente preparados, capaces de satisfacer incluso los más altos requisitos gastronómicos.",
@@ -37,6 +41,8 @@ const translations = {
         navMenu: "CARTA",
         navContact: "CONTACTES",
 
+        currentLang: "CA",
+
         about_first_text_title: "El gust és impecable!",
         about_first_text_body: "Amb orgullus us oferim no només una varietat de plats deliciosos, sinó també una experiència única que comença amb els ingredients més frescos i acaba amb plats magistralment preparats que poden satisfer fins i tot els requisits gastronòmics més alts.",
         about_second_text_title: "Estil refinat!",
@@ -52,6 +58,8 @@ const translations = {
         navAbout: "ПРО НАС",
         navMenu: "МЕНЮ",
         navContact: "КОНТАКТИ",
+
+        currentLang: "UA",
 
         about_first_text_title: "Смак бездоганний!",
         about_first_text_body: "Ми з гордістю пропонуємо вам не лише різноманітні та смачні страви, але й унікальний досвід, який починається з найсвіжіших інгредієнтів і завершується майстерно приготованими стравами, здатними задовольнити навіть найвищі гастрономічні вимоги.",
@@ -69,6 +77,8 @@ const translations = {
         navMenu: "МЕНЮ",
         navContact: "КОНТАКТЫ",
 
+        currentLang: "RU",
+
         about_first_text_title: "Вкус безупречен!",
         about_first_text_body: "Мы с гордостью предлагаем вам не только разнообразные и вкусные блюда, но и уникальный опыт, который начинается с самых свежих ингредиентов и завершается мастерски приготовленными блюдами, способными удовлетворить даже самые высокие гастрономические требования.",
         about_second_text_title: "Изысканный стиль!",
@@ -83,6 +93,8 @@ const translations = {
 };
 
 function changeLanguage(language) {
+
+    const langMarkerBtn = document.getElementById("langMarkerBtn");
     
     const reserveBtn = document.getElementById("reserveBtn");
     const reserveBtnBurger = document.getElementById("reserveBtnBurger");
@@ -109,6 +121,7 @@ function changeLanguage(language) {
     const instaTikTokContainerTitle = document.getElementById("instaTikTokContainerTitle");
 
 
+    langMarkerBtn.textContent = translations[language].currentLang;
 
     reserveBtn.textContent = translations[language].reserve;
     reserveBtnBurger.textContent = translations[language].reserve;
@@ -137,16 +150,20 @@ function changeLanguage(language) {
 }
 
 const burger = document.querySelector('.burger');
+const langMarker = document.querySelector('.langMarker');
 const smallNav = document.querySelector('.small-nav');
 const navLinks = document.querySelectorAll('.small-nav a'); 
 const languageNav = document.querySelectorAll('.button_container button'); 
 
 
-burger.addEventListener('click', () => {
-  burger.classList.toggle('burger--active');
-  smallNav.classList.toggle('small-nav--active');
-});
+function toggleMenu() {
+    burger.classList.toggle('burger--active');
+    smallNav.classList.toggle('small-nav--active');
+  
+}
 
+burger.addEventListener('click', toggleMenu);
+langMarker.addEventListener('click', toggleMenu);
 
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
@@ -156,18 +173,21 @@ navLinks.forEach(link => {
 });
 
 document.addEventListener('click', (e) => {
-  if (!smallNav.contains(e.target) && !burger.contains(e.target)) {
+  if (!smallNav.contains(e.target) && !burger.contains(e.target) && !langMarker.contains(e.target)) {
     burger.classList.remove('burger--active');
     smallNav.classList.remove('small-nav--active');
   }
 });
 
-/* languageNav.forEach(link => {
-  link.addEventListener('click', () => {
-    burger.classList.remove('burger--active'); 
-    smallNav.classList.remove('small-nav--active');
-  });
-}); */
+function handleResize() {
+    if (window.innerWidth > 768) { 
+      burger.classList.remove('burger--active'); 
+      smallNav.classList.remove('small-nav--active');
+    }
+}
+window.addEventListener('resize', handleResize);
+handleResize();
+
 
 
 /* SLIDER */

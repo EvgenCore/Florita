@@ -88,6 +88,14 @@ header .header_container .burger--active .line:nth-child(2) {
 header .header_container .burger--active .line:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
 }
+header .header_container .langMarker {
+  display: none;
+  font-family: "Gerislan";
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 1px;
+  color: #914740;
+}
 header .header_container .small-nav {
   position: fixed;
   top: 59px;
@@ -858,6 +866,7 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
     height: 60px;
     justify-content: space-between;
     padding: 0 40px;
+    column-gap: 5px;
   }
   header .header_container .logo2 {
     display: block;
@@ -868,6 +877,10 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   header .header_container .burger {
     display: flex;
     z-index: 1000;
+  }
+  header .header_container .langMarker {
+    display: flex;
+    margin-left: auto;
   }
   header .header_container .main_nav {
     grid-template-columns: 1fr;

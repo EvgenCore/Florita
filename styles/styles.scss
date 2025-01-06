@@ -92,6 +92,15 @@ header {
             }
         }
 
+        .langMarker{
+            display: none;
+            font-family: 'Gerislan';
+            font-weight: bold; 
+            font-size: 26px;
+            letter-spacing: 1px;
+            color: #914740;
+        }
+
         .small-nav {
             position: fixed;
             top: 59px;
@@ -1028,7 +1037,7 @@ main{
             height: 60px;
             justify-content:space-between;
             padding: 0 40px;
-
+            column-gap: 5px;
             .logo2{
                 display: block;
                 img{
@@ -1038,6 +1047,10 @@ main{
             .burger {
                 display: flex;
                 z-index: 1000;
+            }
+            .langMarker{
+                display: flex;
+                margin-left: auto;
             }
             .main_nav{
                 grid-template-columns: 1fr;
