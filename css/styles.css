@@ -106,7 +106,7 @@ header .header_container .small-nav {
   background: #f7b7b1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
   padding: 0.5rem 1rem;
   transition: right 0.3s ease-in-out;
 }
@@ -115,6 +115,16 @@ header .header_container .small-nav .logo {
   width: 80%;
   display: flex;
   justify-content: center;
+}
+header .header_container .small-nav .menuLinks {
+  padding-left: 20px;
+  row-gap: 10px;
+}
+header .header_container .small-nav .menuLinks li {
+  font-family: "Gerislan";
+  font-weight: 400;
+  font-size: 15px;
+  color: #CE3939;
 }
 header .header_container .small-nav .language_nav-small {
   display: flex;
@@ -146,7 +156,7 @@ header .header_container .small-nav ul {
   display: flex;
   flex-direction: column;
   list-style: none;
-  padding: 10px 10px;
+  padding: 2px 2px;
   margin: 0;
   row-gap: 15px;
 }
@@ -477,7 +487,7 @@ main .menuSection .menu_inner .brunchSection hr {
   border: none; /* Убираем стандартное оформление */
   height: 1.5px; /* Толщина линии */
   background-color: #B53226; /* Цвет линии */
-  margin: 20px auto; /* Отступы сверху и снизу */
+  margin: 10px auto 20px auto;
   width: 60%;
   box-sizing: border-box;
 }
@@ -520,6 +530,30 @@ main .menuSection .menu_inner .brunchSection .dishes .dish .dishData ul li {
   margin-top: 5px;
   font-weight: bold;
 }
+main .menuSection .menu_inner .brunchSection .dishes .dish .priceNames {
+  display: flex;
+  column-gap: 20px;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .priceNames .copa {
+  margin-right: 10px;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .priceNamesChupito {
+  display: flex;
+  column-gap: 20px;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .priceNamesChupito .copa {
+  margin-right: 0;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .priceNamesChupito .copas {
+  margin-right: 10px;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .price {
+  display: flex;
+  column-gap: 20px;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .price p {
+  white-space: nowrap;
+}
 main .menuSection .menu_inner .brunchSection .dishes .dish p {
   color: #B53226;
   font-size: 24px;
@@ -530,6 +564,23 @@ main .menuSection .menu_inner .smaller .dishes .dish .dishData h4 {
   font-size: 22px;
   font-family: "Gerislan";
   font-weight: bold;
+}
+main .menuSection hr {
+  border: none;
+  height: 1.5px;
+  background-color: #B53226;
+  margin: 20px auto;
+  width: 90%;
+  box-sizing: border-box;
+}
+main .menuSection .drinksHeading {
+  text-align: center;
+  color: #B53226;
+  font-size: 50px;
+  font-family: "Gerislan";
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
 }
 main .slider {
   width: 100%;
@@ -1053,6 +1104,9 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   }
   main .menuSection .menu_inner .brunchSection h3 {
     font-size: 35px;
+  }
+  main .menuSection .menu_inner .brunchSection hr {
+    width: 80%;
   }
   main .menuSection .menu_inner .brunchSection .dishes .dish {
     column-gap: 40px;

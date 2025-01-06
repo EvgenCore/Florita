@@ -110,7 +110,7 @@ header {
             background: #f7b7b1;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 10px;
             padding: 0.5rem 1rem;
             transition: right 0.3s ease-in-out;
           
@@ -119,6 +119,16 @@ header {
                 width: 80%;
                 display: flex;
                 justify-content: center;
+            }
+            .menuLinks{
+                padding-left: 20px;
+                row-gap: 10px;
+                li{
+                    font-family: 'Gerislan';
+                    font-weight: 400; 
+                    font-size: 15px;
+                    color: #CE3939;
+                }
             }
            
             .language_nav-small{
@@ -153,7 +163,7 @@ header {
               display: flex;
               flex-direction: column;
               list-style: none;
-              padding: 10px 10px;
+              padding: 2px 2px;
               margin: 0;
               row-gap: 15px;
 
@@ -530,7 +540,7 @@ main{
                     border: none; /* Убираем стандартное оформление */
                     height: 1.5px; /* Толщина линии */
                     background-color: #B53226; /* Цвет линии */
-                    margin: 20px auto; /* Отступы сверху и снизу */
+                    margin: 10px auto 20px auto;
                     width: 60%;
                     box-sizing: border-box;
                 }
@@ -573,6 +583,32 @@ main{
                                 }
                             }
                         }
+
+                        .priceNames{
+                            display: flex;
+                            column-gap: 20px;
+                            .copa{
+                                margin-right: 10px;
+                            }
+                        }
+                        .priceNamesChupito{
+                            display: flex;
+                            column-gap: 20px;
+                            .copa{
+                                margin-right: 0;
+                            }
+                            .copas{
+                                margin-right: 10px;
+                            }
+                        }
+                      
+                        .price{
+                            display: flex;
+                            column-gap: 20px;
+                            p{
+                                white-space: nowrap
+                            }
+                        }
                         p{
                             color: #B53226;
                             font-size: 24px;
@@ -597,6 +633,24 @@ main{
                 }
             }
             
+        }
+
+        hr{
+            border: none;
+            height: 1.5px; 
+            background-color: #B53226; 
+            margin: 20px auto;
+            width: 90%;
+            box-sizing: border-box;
+        }
+        .drinksHeading{
+            text-align: center;
+            color: #B53226;
+            font-size: 50px;
+            font-family: 'Gerislan';
+            font-weight: bold;
+            text-align: center;
+            margin-top: 50px;
         }
     }
 
@@ -1280,6 +1334,11 @@ main{
                 .brunchSection{
                     h3{
                         font-size: 35px;
+                    }
+                    hr{
+                        
+                        width: 80%;
+                        
                     }
 
                     .dishes{
