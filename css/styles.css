@@ -1060,12 +1060,6 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   main .menuSection .menu_inner .brunchSection .dishes .dish .dishData {
     width: 60%;
   }
-  main .menuSection .menu_inner .brunchSection .dishes .dish .dishData h4 {
-    font-size: 20px;
-  }
-  main .menuSection .menu_inner .brunchSection .dishes .dish .dishData p {
-    font-size: 12px;
-  }
   main .menuSection .menu_inner .brunchSection .dishes .dish p {
     font-size: 20px;
   }
