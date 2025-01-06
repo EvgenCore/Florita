@@ -529,7 +529,7 @@ main{
             
                 h3{
                     color: #B53226;
-                    font-size: 40px;
+                    font-size: 50px;
                     font-family: 'Gerislan';
                     font-weight: bold;
                     text-align: center;
@@ -552,21 +552,21 @@ main{
                     justify-content: center;
                     row-gap: 30px;
                     .dish{
-                        column-gap: 20px;
+                        column-gap: 40px;
                         display: flex;
                         justify-content: center;
                         .dishData{
-                            width: 40%;
+                            width: 50%;
                             h4{
                                 color: #B53226;
-                                font-size: 24px;
+                                font-size: 30px;
                                 font-family: 'Gerislan';
                                 font-weight: bold;
                             }
                             p{
                                 margin-top: 5px;
                                 color: #B53226;
-                                font-size: 12px;
+                                font-size: 16px;
                                 font-family: 'Gerislan';
                                 font-style: italic;
                             }

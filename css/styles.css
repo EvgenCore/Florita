@@ -477,7 +477,7 @@ main .menuSection .menu_inner .brunchSection {
 }
 main .menuSection .menu_inner .brunchSection h3 {
   color: #B53226;
-  font-size: 40px;
+  font-size: 50px;
   font-family: "Gerislan";
   font-weight: bold;
   text-align: center;
@@ -499,23 +499,23 @@ main .menuSection .menu_inner .brunchSection .dishes {
   row-gap: 30px;
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish {
-  column-gap: 20px;
+  column-gap: 40px;
   display: flex;
   justify-content: center;
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish .dishData {
-  width: 40%;
+  width: 50%;
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish .dishData h4 {
   color: #B53226;
-  font-size: 24px;
+  font-size: 30px;
   font-family: "Gerislan";
   font-weight: bold;
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish .dishData p {
   margin-top: 5px;
   color: #B53226;
-  font-size: 12px;
+  font-size: 16px;
   font-family: "Gerislan";
   font-style: italic;
 }
