@@ -123,7 +123,7 @@ header .header_container .small-nav .menuLinks {
 header .header_container .small-nav .menuLinks li {
   font-family: "Gerislan";
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   color: #CE3939;
 }
 header .header_container .small-nav .language_nav-small {
@@ -175,7 +175,7 @@ header .header_container .small-nav ul a li {
   font-family: "Gerislan";
   font-weight: 400;
   cursor: pointer;
-  color: #CE3939;
+  color: #992b2b;
   white-space: nowrap;
   cursor: pointer;
 }
