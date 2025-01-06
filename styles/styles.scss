@@ -509,7 +509,7 @@ main{
     .menuSection{
         background-image: url('../images/carta_small_background.webp');
         background-size: cover; 
-       
+       padding-top: 60px;
         background-position: 50% 100%;
         background-repeat: no-repeat;
         width: 100%;
@@ -529,7 +529,7 @@ main{
             
                 h3{
                     color: #B53226;
-                    font-size: 50px;
+                    font-size: 55px;
                     font-family: 'Gerislan';
                     font-weight: bold;
                     text-align: center;
@@ -541,7 +541,7 @@ main{
                     height: 1.5px; /* Толщина линии */
                     background-color: #B53226; /* Цвет линии */
                     margin: 10px auto 20px auto;
-                    width: 60%;
+                    width: 80%;
                     box-sizing: border-box;
                 }
                 .dishes{
@@ -559,14 +559,14 @@ main{
                             width: 50%;
                             h4{
                                 color: #B53226;
-                                font-size: 30px;
+                                font-size: 35px;
                                 font-family: 'Gerislan';
                                 font-weight: bold;
                             }
                             p{
                                 margin-top: 5px;
                                 color: #B53226;
-                                font-size: 16px;
+                                font-size: 18px;
                                 font-family: 'Gerislan';
                                 font-style: italic;
                             }
@@ -575,7 +575,7 @@ main{
                                 margin: 0;
                                 li{
                                     color: #B53226;
-                                    font-size: 12px;
+                                    font-size: 18px;
                                     font-family: 'Gerislan';
                                     font-style: italic;
                                     margin-top: 5px;
@@ -611,7 +611,7 @@ main{
                         }
                         p{
                             color: #B53226;
-                            font-size: 24px;
+                            font-size: 35px;
                             font-family: 'Gerislan';
                             font-weight: bold;
                         }
@@ -1346,11 +1346,21 @@ main{
                             column-gap: 40px;
                             .dishData{
                                 width: 60%;
-                                
+                                h4{
+                                    font-size: 24px;
+                                }
+                                p{
+                                    font-size: 14px;
+                                }
+                                ul{
+                                    li{
+                                        font-size: 14px;
+                                    }
+                                }
                             
                             }
                             p{
-                                font-size: 20px;
+                                font-size: 24px;
                             }
                         }
                     }

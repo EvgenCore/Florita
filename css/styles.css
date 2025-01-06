@@ -457,6 +457,7 @@ main .aboutSection .about_inner .about_second .image_container img {
 main .menuSection {
   background-image: url("../images/carta_small_background.webp");
   background-size: cover;
+  padding-top: 60px;
   background-position: 50% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -477,7 +478,7 @@ main .menuSection .menu_inner .brunchSection {
 }
 main .menuSection .menu_inner .brunchSection h3 {
   color: #B53226;
-  font-size: 50px;
+  font-size: 55px;
   font-family: "Gerislan";
   font-weight: bold;
   text-align: center;
@@ -488,7 +489,7 @@ main .menuSection .menu_inner .brunchSection hr {
   height: 1.5px; /* Толщина линии */
   background-color: #B53226; /* Цвет линии */
   margin: 10px auto 20px auto;
-  width: 60%;
+  width: 80%;
   box-sizing: border-box;
 }
 main .menuSection .menu_inner .brunchSection .dishes {
@@ -508,14 +509,14 @@ main .menuSection .menu_inner .brunchSection .dishes .dish .dishData {
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish .dishData h4 {
   color: #B53226;
-  font-size: 30px;
+  font-size: 35px;
   font-family: "Gerislan";
   font-weight: bold;
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish .dishData p {
   margin-top: 5px;
   color: #B53226;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Gerislan";
   font-style: italic;
 }
@@ -524,7 +525,7 @@ main .menuSection .menu_inner .brunchSection .dishes .dish .dishData ul {
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish .dishData ul li {
   color: #B53226;
-  font-size: 12px;
+  font-size: 18px;
   font-family: "Gerislan";
   font-style: italic;
   margin-top: 5px;
@@ -556,7 +557,7 @@ main .menuSection .menu_inner .brunchSection .dishes .dish .price p {
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish p {
   color: #B53226;
-  font-size: 24px;
+  font-size: 35px;
   font-family: "Gerislan";
   font-weight: bold;
 }
@@ -1114,8 +1115,17 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   main .menuSection .menu_inner .brunchSection .dishes .dish .dishData {
     width: 60%;
   }
+  main .menuSection .menu_inner .brunchSection .dishes .dish .dishData h4 {
+    font-size: 24px;
+  }
+  main .menuSection .menu_inner .brunchSection .dishes .dish .dishData p {
+    font-size: 14px;
+  }
+  main .menuSection .menu_inner .brunchSection .dishes .dish .dishData ul li {
+    font-size: 14px;
+  }
   main .menuSection .menu_inner .brunchSection .dishes .dish p {
-    font-size: 20px;
+    font-size: 24px;
   }
   main .contactsSection .contacts_inner .upper_decoration {
     padding-top: 20px;
