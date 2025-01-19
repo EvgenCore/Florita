@@ -1,10 +1,4 @@
-@charset "UTF-8";
-@font-face {
-  font-family: Gerislan;
-  src: url("../assets/fonts/Gerislan.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
+/* @use 'fonts'; */
 html {
   scroll-padding-top: 120px;
   scroll-behavior: smooth;
@@ -13,6 +7,7 @@ html {
 body {
   margin: 0;
   background-color: #f7b7b1;
+  font-family: "Lora", serif;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -91,7 +86,7 @@ header .header_container .burger--active .line:nth-child(3) {
 }
 header .header_container .langMarker {
   display: none;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-weight: bold;
   font-size: 26px;
   letter-spacing: 1px;
@@ -117,13 +112,14 @@ header .header_container .small-nav .logo {
   justify-content: center;
 }
 header .header_container .small-nav .menuLinks {
-  padding-left: 20px;
-  row-gap: 10px;
+  padding-left: 10px;
+  row-gap: 7px;
+  margin-top: -10px;
 }
 header .header_container .small-nav .menuLinks li {
-  font-family: "Gerislan";
-  font-weight: 400;
-  font-size: 18px;
+  /* font-family: 'Gerislan'; */
+  font-weight: 600;
+  font-size: 15px;
   color: #CE3939;
 }
 header .header_container .small-nav .language_nav-small {
@@ -138,9 +134,9 @@ header .header_container .small-nav .language_nav-small .button_container {
   padding: 10px 15px;
 }
 header .header_container .small-nav .language_nav-small .button_container button {
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   background-color: unset;
   border: none;
   transition: background-color 0.25s, scale 0.25s;
@@ -158,12 +154,12 @@ header .header_container .small-nav ul {
   list-style: none;
   padding: 2px 2px;
   margin: 0;
-  row-gap: 15px;
+  row-gap: 10px;
 }
 header .header_container .small-nav ul a {
   text-decoration: none;
-  font-size: 27px;
-  font-family: "Gerislan";
+  font-size: 24px;
+  /* font-family: 'Gerislan'; */
   font-weight: 400;
   cursor: pointer;
   color: #CE3939;
@@ -172,7 +168,7 @@ header .header_container .small-nav ul a {
 }
 header .header_container .small-nav ul a li {
   text-decoration: none;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-weight: 400;
   cursor: pointer;
   color: #992b2b;
@@ -187,7 +183,7 @@ header .header_container .small-nav .small-reservar_container {
   letter-spacing: 0.7px;
   padding: 7px 30px;
   border-radius: 10px;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-weight: 400;
   font-size: 20px;
   background-color: #D2797B;
@@ -200,7 +196,7 @@ header .header_container .small-nav .small-reservar_container a {
   letter-spacing: 0.7px;
   background-color: #D2797B;
   border-radius: 30px;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-weight: 400;
   font-size: 20px;
   transition: color 0.4s, background-color 0.4s;
@@ -219,9 +215,9 @@ header .header_container .reservar_container a {
   background-color: #E18F90;
   padding: 7px 30px;
   border-radius: 30px;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-weight: 400;
-  font-size: 35px;
+  font-size: 30px;
   transition: color 0.4s, background-color 0.4s;
 }
 header .header_container .reservar_container a:hover {
@@ -269,8 +265,8 @@ header .header_container .main_nav nav ul a:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
 header .header_container .main_nav nav ul li {
-  font-size: 36px;
-  font-family: "Gerislan";
+  font-size: 30px;
+  /* font-family: 'Gerislan'; */
   font-weight: 400;
   cursor: pointer;
 }
@@ -297,7 +293,7 @@ header .header_container .language_nav .button_container {
   column-gap: 4px;
 }
 header .header_container .language_nav .button_container button {
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-weight: 400;
   font-size: 20px;
   background-color: unset;
@@ -384,13 +380,13 @@ main .aboutSection .about_inner .about_first .about_first_text h3 {
   color: #B53226;
   /* font-size: 40px; */
   font-size: 3vw;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-weight: 400;
   /* max-width: 390px; */
 }
 main .aboutSection .about_inner .about_first .about_first_text p {
   margin-top: 30px;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   /* font-size: 22px; */
   font-size: 1.5vw;
   color: #5B1B1B;
@@ -428,14 +424,14 @@ main .aboutSection .about_inner .about_second .about_second_text h3 {
   color: #B53226;
   /* font-size: 40px; */
   font-size: 3vw;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-weight: 400;
   /* max-width: 441px; */
   margin-left: auto;
 }
 main .aboutSection .about_inner .about_second .about_second_text p {
   margin-top: 30px;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   /* font-size: 22px; */
   font-size: 1.5vw;
   color: #5B1B1B;
@@ -475,49 +471,114 @@ main .menuSection .menu_inner .brunchSection {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  text-align: left;
+  padding: 0;
 }
 main .menuSection .menu_inner .brunchSection h3 {
   color: #B53226;
   font-size: 55px;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-weight: bold;
   text-align: center;
   margin-top: 30px;
 }
 main .menuSection .menu_inner .brunchSection hr {
-  border: none; /* Убираем стандартное оформление */
-  height: 1.5px; /* Толщина линии */
-  background-color: #B53226; /* Цвет линии */
+  border: none;
+  height: 1.5px;
+  background-color: #B53226;
   margin: 10px auto 20px auto;
   width: 80%;
   box-sizing: border-box;
 }
 main .menuSection .menu_inner .brunchSection .dishes {
   margin-top: 20px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  /* max-width: 70%; */
   justify-content: center;
   row-gap: 30px;
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish {
   column-gap: 40px;
+  /* display: flex;
+  justify-content: space-around; */
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .ddd {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .ddd .alco {
+  display: block;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .ddd .dishData {
+  align-items: center;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .ddd .dishData .arrow {
+  width: 40px;
+  height: fit-content;
+  cursor: pointer;
+  animation: pulse 4s infinite;
+  transition: transform 0.3s ease;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .ddd .dishData .arrow:hover {
+  transform: scale(1.1);
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .ddd .dishData .arrow.rotated {
+  transform: rotate(180deg);
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .photos {
+  margin-top: 20px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .photos img {
+  display: block;
+  width: 250px;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .photos.show {
+  max-height: 500px;
+  opacity: 1;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .moveRight {
+  margin-right: 5px;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .moveRightMore {
+  margin-right: 7px;
+}
+main .menuSection .menu_inner .brunchSection .dishes .dish .moveRightMoree {
+  margin-right: 10px;
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish .dishData {
-  width: 50%;
+  display: flex;
+  width: 60%;
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish .dishData h4 {
   color: #B53226;
   font-size: 35px;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-weight: bold;
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish .dishData p {
   margin-top: 5px;
   color: #B53226;
   font-size: 18px;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-style: italic;
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish .dishData ul {
@@ -526,7 +587,7 @@ main .menuSection .menu_inner .brunchSection .dishes .dish .dishData ul {
 main .menuSection .menu_inner .brunchSection .dishes .dish .dishData ul li {
   color: #B53226;
   font-size: 18px;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-style: italic;
   margin-top: 5px;
   font-weight: bold;
@@ -558,12 +619,12 @@ main .menuSection .menu_inner .brunchSection .dishes .dish .price p {
 main .menuSection .menu_inner .brunchSection .dishes .dish p {
   color: #B53226;
   font-size: 35px;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-weight: bold;
 }
 main .menuSection .menu_inner .smaller .dishes .dish .dishData h4 {
   font-size: 22px;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-weight: bold;
 }
 main .menuSection hr {
@@ -578,7 +639,7 @@ main .menuSection .drinksHeading {
   text-align: center;
   color: #B53226;
   font-size: 50px;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-weight: bold;
   text-align: center;
   margin-top: 50px;
@@ -641,7 +702,7 @@ main .contactsSection .contacts_inner .social {
 }
 main .contactsSection .contacts_inner .social h4 {
   color: #B53226;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-weight: 400;
   font-size: 45px;
   text-align: center;
@@ -699,7 +760,7 @@ main .contactsSection .contacts_inner .instaTikTokContainer {
 }
 main .contactsSection .contacts_inner .instaTikTokContainer h4 {
   color: #B53226;
-  font-family: "Gerislan";
+  /* font-family: 'Gerislan'; */
   font-weight: 400;
   font-size: 45px;
   text-align: center;
@@ -739,22 +800,22 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
     font-size: 27px;
   }
   header .header_container .main_nav nav ul {
-    column-gap: 20px;
+    column-gap: 16px;
   }
   header .header_container .main_nav nav ul li {
-    font-size: 27px;
+    font-size: 22px;
   }
   header .header_container .main_nav .nav_inicio {
-    column-gap: 37px;
+    column-gap: 30px;
   }
   header .header_container .main_nav .logo {
     width: 140px;
   }
   header .header_container .main_nav .nav_carta {
-    column-gap: 37px;
+    column-gap: 30px;
   }
   header .header_container .language_nav .button_container button {
-    font-size: 16px;
+    font-size: 13px;
   }
   main .aboutSection .about_inner .about_first {
     padding: 0 50px;
@@ -773,6 +834,21 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   }
   main .aboutSection .about_inner .about_second .about_second_text p {
     font-size: 18px;
+  }
+  main .menuSection .menu_inner .brunchSection h3 {
+    font-size: 50px;
+  }
+  main .menuSection .menu_inner .brunchSection .dishes .dish .dishData h4 {
+    font-size: 27px;
+  }
+  main .menuSection .menu_inner .brunchSection .dishes .dish .dishData p {
+    font-size: 12px;
+  }
+  main .menuSection .menu_inner .brunchSection .dishes .dish p {
+    font-size: 25px;
+  }
+  main .menuSection .menu_inner .brunchSection .dishes .dish .price p {
+    font-size: 25px;
   }
   main .menuSection .menu_inner .menu_buttons {
     row-gap: 20px;
@@ -884,6 +960,9 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   main .aboutSection .about_inner .about_second .about_second_text p {
     font-size: 14px;
     margin-top: 15px;
+  }
+  main .menuSection .menu_inner {
+    column-count: 1;
   }
   main .menuSection .menu_inner h3 {
     font-size: 70px;
@@ -1103,20 +1182,32 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   main .menuSection {
     background-image: url("../images/carta_small_background.webp");
   }
+  main .menuSection .menu_inner .brunchSection {
+    padding: 0 5px;
+  }
   main .menuSection .menu_inner .brunchSection h3 {
-    font-size: 35px;
+    font-size: 30px;
   }
   main .menuSection .menu_inner .brunchSection hr {
     width: 80%;
   }
   main .menuSection .menu_inner .brunchSection .dishes .dish {
-    column-gap: 40px;
+    column-gap: 15px;
+    /*                             .moveRight{
+                                    margin-right: 5px;
+                                }
+                                .moveRightMore{
+                                    margin-right: 7px;
+                                }
+                                .moveRightMoree{
+                                    margin-right: 10px;
+                                } */
   }
   main .menuSection .menu_inner .brunchSection .dishes .dish .dishData {
     width: 60%;
   }
   main .menuSection .menu_inner .brunchSection .dishes .dish .dishData h4 {
-    font-size: 24px;
+    font-size: 20px;
   }
   main .menuSection .menu_inner .brunchSection .dishes .dish .dishData p {
     font-size: 14px;
@@ -1125,7 +1216,10 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
     font-size: 14px;
   }
   main .menuSection .menu_inner .brunchSection .dishes .dish p {
-    font-size: 24px;
+    font-size: 20px;
+  }
+  main .menuSection .menu_inner .brunchSection .dishes .dish .price p {
+    font-size: 20px;
   }
   main .contactsSection .contacts_inner .upper_decoration {
     padding-top: 20px;
