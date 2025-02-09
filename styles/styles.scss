@@ -514,7 +514,7 @@ main{
     .menuSection{
         background-image: url('../images/carta_small_background.webp');
         background-size: cover; 
-        padding-top: 60px;
+        padding-top: 20px;
         background-position: 50% 100%;
         background-repeat: no-repeat;
         width: 100%;
@@ -545,7 +545,8 @@ main{
                     /* font-family: 'Gerislan'; */
                     font-weight: bold;
                     text-align: center;
-                    margin-top: 30px;
+                    margin-top: 10px;
+                    padding-top: 10px;
                 }
 
                 hr{
@@ -1499,8 +1500,11 @@ main{
 
         .menuSection{
             background-image: url('../images/carta_small_background.webp');
-            
+            .helpInfo{
+                   font-size: 15px;
+                }
             .menu_inner{
+                
                 .brunchSection{
                     padding: 0 5px;
                     h3{

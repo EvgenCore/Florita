@@ -453,7 +453,7 @@ main .aboutSection .about_inner .about_second .image_container img {
 main .menuSection {
   background-image: url("../images/carta_small_background.webp");
   background-size: cover;
-  padding-top: 60px;
+  padding-top: 20px;
   background-position: 50% 100%;
   background-repeat: no-repeat;
   width: 100%;
@@ -485,7 +485,8 @@ main .menuSection .menu_inner .brunchSection h3 {
   /* font-family: 'Gerislan'; */
   font-weight: bold;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
+  padding-top: 10px;
 }
 main .menuSection .menu_inner .brunchSection hr {
   border: none;
@@ -1230,6 +1231,9 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   }
   main .menuSection {
     background-image: url("../images/carta_small_background.webp");
+  }
+  main .menuSection .helpInfo {
+    font-size: 15px;
   }
   main .menuSection .menu_inner .brunchSection {
     padding: 0 5px;
