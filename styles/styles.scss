@@ -514,14 +514,12 @@ main{
     .menuSection{
         background-image: url('../images/carta_small_background.webp');
         background-size: cover; 
-        padding-top: 60px;
+       padding-top: 60px;
         background-position: 50% 100%;
         background-repeat: no-repeat;
         width: 100%;
         border-top: 4px solid #823226; 
         .menu_inner{
-
-            
             padding-bottom: 50px;
            
             column-count: 2;
@@ -546,9 +544,9 @@ main{
                 }
 
                 hr{
-                    border: none; 
-                    height: 1.5px; 
-                    background-color: #B53226; 
+                    border: none; /* Убираем стандартное оформление */
+                    height: 1.5px; /* Толщина линии */
+                    background-color: #B53226; /* Цвет линии */
                     margin: 10px auto 20px auto;
                     width: 80%;
                     box-sizing: border-box;
@@ -563,66 +561,9 @@ main{
                     row-gap: 30px;
 
                     .dish{
-                        .ddd{
-                            .alco{
-                                display:block;
-                            }
-                            display: flex;
-                            justify-content: space-around;
-                            .dishData{
-                                align-items: center;
-                                .arrow{
-                                    width: 40px;
-                                    height: fit-content;
-                                    cursor: pointer;
-                                    animation: pulse 4s infinite;
-                                    transition: transform 0.3s ease; 
-                                    &:hover {
-                                        transform: scale(1.1);
-                                    }
-                                    &.rotated {
-                                        transform: rotate(180deg);
-                                    }
-                                }
-                            }
-                        }
-                        .photos {
-                            margin-top: 20px;
-                            overflow: hidden;
-                            max-height: 0;
-                            transition: max-height 0.5s ease, opacity 0.5s ease;
-                            opacity: 0;
-                           
-                        
-                            img {
-                              display: block;
-                              width: 250px;
-                              
-                              margin: 10px auto;
-                              border-radius: 8px;
-                            }
-                        }
-                        .photos.show {
-                            max-height: 500px;
-                            opacity: 1;
-                        }
-
-                        @keyframes pulse {
-                            0% {
-                              transform: scale(1);
-                            }
-                            50% {
-                              transform: scale(1.2);
-                            }
-                            100% {
-                              transform: scale(1);
-                            }
-                        }
-
                         column-gap: 40px;
-                        /* display: flex;
-                        justify-content: space-around; */
-
+                        display: flex;
+                        justify-content: space-around;
                         
                         .moveRight{
                             margin-right: 5px;
@@ -635,12 +576,7 @@ main{
                         }
                         
                         .dishData{
-                            display: flex;
                             width: 60%;
-
-
-                            
-                         
                             h4{
                                 color: #B53226;
                                 font-size: 35px;
@@ -837,6 +773,42 @@ main{
                     }
                     
                 }
+            }
+
+            .horarioContainer{
+                width: fit-content;
+                margin: 10px auto;
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin-top: 20px;
+                    font-size: 30px;
+                }
+                td {
+                    padding: 5px;
+                   text-align: left;
+                    text-align: center;
+                    color: #b02e20;
+                }
+                td:first-child {
+                    text-align: left;
+                    padding-left: 15px;
+                }
+/*                 width: fit-content;
+                margin: 0 auto;
+                margin-top: 20px;
+                text-align: left;
+                display: flex;
+                gap: 20px;
+                article{
+                    p{
+                        margin-top: 10px;
+                        font-size: 30px;
+                        color: #B53226;
+                       
+                    }
+                } */
             }
 
             .mapContainer{
@@ -1047,6 +1019,11 @@ main{
                         }
                     }
                 }
+                .horarioContainer{
+                    table {
+                        font-size: 30px;
+                    }
+                }
                 .mapContainer{
                     
                     max-width: 700px;
@@ -1215,6 +1192,11 @@ main{
                         }
                     }
                 }
+                .horarioContainer{
+                    table {
+                        font-size: 20px;
+                    }
+                }
                 .mapContainer{
                     margin: 30px auto 0px auto;
                     max-width: 500px;
@@ -1343,6 +1325,11 @@ main{
                         .gmail{
                             width: 65px;
                         }
+                    }
+                }
+                .horarioContainer{
+                    table {
+                        font-size: 18px;
                     }
                 }
                 .mapContainer{
@@ -1528,6 +1515,11 @@ main{
                         img{
                             width: 50px;
                         }
+                    }
+                }
+                .horarioContainer{
+                    table {
+                        font-size: 16px;
                     }
                 }
                 .mapContainer{

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* @use 'fonts'; */
 html {
   scroll-padding-top: 120px;
@@ -483,9 +484,9 @@ main .menuSection .menu_inner .brunchSection h3 {
   margin-top: 30px;
 }
 main .menuSection .menu_inner .brunchSection hr {
-  border: none;
-  height: 1.5px;
-  background-color: #B53226;
+  border: none; /* Убираем стандартное оформление */
+  height: 1.5px; /* Толщина линии */
+  background-color: #B53226; /* Цвет линии */
   margin: 10px auto 20px auto;
   width: 80%;
   box-sizing: border-box;
@@ -501,59 +502,8 @@ main .menuSection .menu_inner .brunchSection .dishes {
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish {
   column-gap: 40px;
-  /* display: flex;
-  justify-content: space-around; */
-}
-main .menuSection .menu_inner .brunchSection .dishes .dish .ddd {
   display: flex;
   justify-content: space-around;
-}
-main .menuSection .menu_inner .brunchSection .dishes .dish .ddd .alco {
-  display: block;
-}
-main .menuSection .menu_inner .brunchSection .dishes .dish .ddd .dishData {
-  align-items: center;
-}
-main .menuSection .menu_inner .brunchSection .dishes .dish .ddd .dishData .arrow {
-  width: 40px;
-  height: fit-content;
-  cursor: pointer;
-  animation: pulse 4s infinite;
-  transition: transform 0.3s ease;
-}
-main .menuSection .menu_inner .brunchSection .dishes .dish .ddd .dishData .arrow:hover {
-  transform: scale(1.1);
-}
-main .menuSection .menu_inner .brunchSection .dishes .dish .ddd .dishData .arrow.rotated {
-  transform: rotate(180deg);
-}
-main .menuSection .menu_inner .brunchSection .dishes .dish .photos {
-  margin-top: 20px;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.5s ease, opacity 0.5s ease;
-  opacity: 0;
-}
-main .menuSection .menu_inner .brunchSection .dishes .dish .photos img {
-  display: block;
-  width: 250px;
-  margin: 10px auto;
-  border-radius: 8px;
-}
-main .menuSection .menu_inner .brunchSection .dishes .dish .photos.show {
-  max-height: 500px;
-  opacity: 1;
-}
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish .moveRight {
   margin-right: 5px;
@@ -565,7 +515,6 @@ main .menuSection .menu_inner .brunchSection .dishes .dish .moveRightMoree {
   margin-right: 10px;
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish .dishData {
-  display: flex;
   width: 60%;
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish .dishData h4 {
@@ -727,6 +676,40 @@ main .contactsSection .contacts_inner .social .socialIconsContainer img:hover {
 main .contactsSection .contacts_inner .social .socialIconsContainer img:active {
   scale: 0.99;
 }
+main .contactsSection .contacts_inner .horarioContainer {
+  width: fit-content;
+  margin: 10px auto;
+  /*                 width: fit-content;
+                  margin: 0 auto;
+                  margin-top: 20px;
+                  text-align: left;
+                  display: flex;
+                  gap: 20px;
+                  article{
+                      p{
+                          margin-top: 10px;
+                          font-size: 30px;
+                          color: #B53226;
+
+                      }
+                  } */
+}
+main .contactsSection .contacts_inner .horarioContainer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 30px;
+}
+main .contactsSection .contacts_inner .horarioContainer td {
+  padding: 5px;
+  text-align: left;
+  text-align: center;
+  color: #b02e20;
+}
+main .contactsSection .contacts_inner .horarioContainer td:first-child {
+  text-align: left;
+  padding-left: 15px;
+}
 main .contactsSection .contacts_inner .mapContainer {
   margin: 50px auto 0px auto;
   display: flex;
@@ -871,6 +854,9 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   main .contactsSection .contacts_inner .social .socialIconsContainer img {
     width: 90px;
   }
+  main .contactsSection .contacts_inner .horarioContainer table {
+    font-size: 30px;
+  }
   main .contactsSection .contacts_inner .mapContainer {
     max-width: 700px;
   }
@@ -1003,6 +989,9 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   main .contactsSection .contacts_inner .social .socialIconsContainer .gmail {
     width: 90px;
   }
+  main .contactsSection .contacts_inner .horarioContainer table {
+    font-size: 20px;
+  }
   main .contactsSection .contacts_inner .mapContainer {
     margin: 30px auto 0px auto;
     max-width: 500px;
@@ -1105,6 +1094,9 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   }
   main .contactsSection .contacts_inner .social .socialIconsContainer .gmail {
     width: 65px;
+  }
+  main .contactsSection .contacts_inner .horarioContainer table {
+    font-size: 18px;
   }
   main .contactsSection .contacts_inner .mapContainer {
     max-width: 400px;
@@ -1247,6 +1239,9 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   }
   main .contactsSection .contacts_inner .social .socialIconsContainer img {
     width: 50px;
+  }
+  main .contactsSection .contacts_inner .horarioContainer table {
+    font-size: 16px;
   }
   main .contactsSection .contacts_inner .mapContainer {
     max-width: 350px;
