@@ -514,11 +514,16 @@ main{
     .menuSection{
         background-image: url('../images/carta_small_background.webp');
         background-size: cover; 
-       padding-top: 60px;
+        padding-top: 60px;
         background-position: 50% 100%;
         background-repeat: no-repeat;
         width: 100%;
         border-top: 4px solid #823226; 
+        .helpInfo{
+            text-align: center;
+            font-style: italic;
+            color: #B53226;
+        }
         .menu_inner{
             padding-bottom: 50px;
            
@@ -544,9 +549,9 @@ main{
                 }
 
                 hr{
-                    border: none; /* Убираем стандартное оформление */
-                    height: 1.5px; /* Толщина линии */
-                    background-color: #B53226; /* Цвет линии */
+                    border: none; 
+                    height: 1.5px;
+                    background-color: #B53226; 
                     margin: 10px auto 20px auto;
                     width: 80%;
                     box-sizing: border-box;
@@ -560,6 +565,61 @@ main{
                     justify-content: center;
                     row-gap: 30px;
 
+                    .modal {
+                        visibility: hidden; 
+                        position: fixed;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 1;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        width: 100vw;
+                        height: 100vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        opacity: 0;
+                        margin-top: 50px;
+                        transition: opacity 0.3s ease, visibility 0s 0.3s; 
+                    }
+                      
+                    .modal.show {
+                        visibility: visible;
+                        
+                        opacity: 1;
+                        transition: opacity 0.3s ease, visibility 0s 0s;
+                    }
+                      
+                    .modal-content {
+                        background-color: #fff;
+                        padding: 30px;
+                        border-radius: 12px;
+                        width: 90%;
+                        max-width: 470px;
+                        text-align: center;
+                        position: relative;
+                    }
+                      
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        border-radius: 8px;
+                    }
+                      
+                    .close {
+                        position: absolute;
+                        top: 10px;
+                        right: 15px;
+                        color: #aaa;
+                        font-size: 24px;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                      
+                    .close:hover {
+                        color: #000;
+                    }
+                      
                     .dish{
                         column-gap: 40px;
                         display: flex;
@@ -582,6 +642,8 @@ main{
                                 font-size: 35px;
                                 /* font-family: 'Gerislan'; */
                                 font-weight: bold;
+                                text-decoration: underline;
+                                cursor: pointer;
                             }
                             p{
                                 margin-top: 5px;
@@ -1308,6 +1370,13 @@ main{
         .menuSection{
             .menu_inner{
                 column-count: 1;
+                .brunchSection{
+                    .dishes{
+                        .modal-content {
+                            width: 70%;
+                        }
+                    }
+                }
             }  
         }
 

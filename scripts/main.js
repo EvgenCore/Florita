@@ -7,6 +7,7 @@ const translations = {
     navContact: "CONTACTS",
 
     horario:"Schedule",
+    helpInfo:"Click on the name of the dish to see the photo",
 
     monday:"Monday",
     tuesday:"Tuesday",
@@ -228,6 +229,7 @@ const translations = {
       navContact: "CONTACTOS",
 
       horario:"Horario",
+      helpInfo:"Pulsa en el nombre del plato para ver la foto",
 
 
       monday:"Lunes",
@@ -451,6 +453,7 @@ const translations = {
       navContact: "CONTACTES",
 
       horario:"Horari",
+      helpInfo:"Fes clic en el nom del plat per veure la foto",
 
       monday:"Dilluns",
       tuesday:"Dimarts",
@@ -674,6 +677,7 @@ const translations = {
       navContact: "КОНТАКТИ",
 
       horario:"Розклад",
+      helpInfo:"Натисніть на назву страви, щоб побачити фото",
 
       monday:"Понеділок",
       tuesday:"Вівторок",
@@ -896,6 +900,7 @@ const translations = {
       navContact: "КОНТАКТЫ",
 
       horario:"Расписание",
+      helpInfo:"Нажмите на название блюда, чтобы увидеть фото",
 
       monday:"Понедельник",
       tuesday:"Вторник",
@@ -1130,6 +1135,8 @@ function changeLanguage(language) {
     menuTitle: "menuTitle",
     socialTitle: "socialTitle",
     instaTikTokContainerTitle: "instaTikTokContainerTitle",
+
+    helpInfo: "helpInfo",
 
     horario:"horarioTitle",
 
@@ -1511,3 +1518,40 @@ slides.addEventListener("touchend", startAutoSlide);
 startAutoSlide();
 });
 
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('modal');
+  const openModalText = document.getElementById('brunchSaladoBrusqueta');
+  const closeModal = document.getElementById('closeModal');
+
+
+  modal.classList.remove('show');
+
+
+  openModalText.addEventListener('click', () => {
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden'; 
+  });
+
+
+  closeModal.addEventListener('click', () => {
+    modal.classList.remove('show');
+    document.body.style.overflow = ''; 
+  });
+
+
+  window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.classList.remove('show');
+      document.body.style.overflow = '';
+    }
+  });
+});

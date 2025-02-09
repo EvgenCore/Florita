@@ -460,6 +460,11 @@ main .menuSection {
   width: 100%;
   border-top: 4px solid #823226;
 }
+main .menuSection .helpInfo {
+  text-align: center;
+  font-style: italic;
+  color: #B53226;
+}
 main .menuSection .menu_inner {
   padding-bottom: 50px;
   column-count: 2;
@@ -500,6 +505,54 @@ main .menuSection .menu_inner .brunchSection .dishes {
   justify-content: center;
   row-gap: 30px;
 }
+main .menuSection .menu_inner .brunchSection .dishes .modal {
+  visibility: hidden; /* Окно скрыто по умолчанию */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  margin-top: 50px;
+  transition: opacity 0.3s ease, visibility 0s 0.3s; /* Плавная анимация */
+}
+main .menuSection .menu_inner .brunchSection .dishes .modal.show {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s ease, visibility 0s 0s; /* Анимация появления */
+}
+main .menuSection .menu_inner .brunchSection .dishes .modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 470px;
+  text-align: center;
+  position: relative;
+}
+main .menuSection .menu_inner .brunchSection .dishes img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+main .menuSection .menu_inner .brunchSection .dishes .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #aaa;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+main .menuSection .menu_inner .brunchSection .dishes .close:hover {
+  color: #000;
+}
 main .menuSection .menu_inner .brunchSection .dishes .dish {
   column-gap: 40px;
   display: flex;
@@ -522,6 +575,8 @@ main .menuSection .menu_inner .brunchSection .dishes .dish .dishData h4 {
   font-size: 35px;
   /* font-family: 'Gerislan'; */
   font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
 }
 main .menuSection .menu_inner .brunchSection .dishes .dish .dishData p {
   margin-top: 5px;
@@ -1082,6 +1137,9 @@ main .contactsSection .contacts_inner .instaTikTokContainer .instaTikTokIconsCon
   }
   main .menuSection .menu_inner {
     column-count: 1;
+  }
+  main .menuSection .menu_inner .brunchSection .dishes .modal-content {
+    width: 70%;
   }
   main .contactsSection .contacts_inner .social h4 {
     font-size: 20px;
